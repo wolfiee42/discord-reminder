@@ -1,0 +1,12 @@
+name: Hourly Discord Reminder
+
+on:
+  schedule:
+    - cron: "* * * * *" # Bangladesh 9AM–6PM UTC+6
+
+jobs:
+  ping-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Vercel Reminder API
+        run: curl -s https://your-app.vercel.app/api/reminder
