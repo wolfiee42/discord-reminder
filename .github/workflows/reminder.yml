@@ -1,8 +1,9 @@
-name: Hourly Discord Reminder
+name: Test Discord Reminder
 
 on:
+  workflow_dispatch: {} # allows manual run
   schedule:
-    - cron: "* * * * *" # Bangladesh 9AM–6PM UTC+6
+    - cron: "* * * * *" # every minute
 
 jobs:
   ping-vercel:
