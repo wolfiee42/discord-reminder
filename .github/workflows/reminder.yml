@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call Vercel Reminder API
-        run: curl -s https://your-app.vercel.app/api/reminder
+        run: curl -s https://discord-reminder-brown.vercel.app/api/reminder
